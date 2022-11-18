@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+  <form>
+    <input type="text" id="nom">
+    <br>
+    <br>
+    <input type="password" id="pass">
+    <br>
+    <br>
+    <button onclick="validation();">Login</button>
+  </form>
+  <script>
+    function validation(){
+      var user = 'khasa';
+      var key = '123';
+
+      var users = document.getElementById('nom').value;
+      var keys = document.getElementById('pass').value;
+
+      if ((user == users) && (key == keys)){
+        alert("Felicitation!");
+      }
+      else{
+       Alert("Oops...");
+      }
+    }
+  </script>
+</body>
+</html>
